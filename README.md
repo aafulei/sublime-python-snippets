@@ -1,6 +1,9 @@
-# My Python Snippets for Sublime Text
+# My Python Package for Sublime Text 3
 
-The real purpose is to override and thus remove unnecessary built-in snippets.
+This package overrides the files of the same names in the default Python package of Sublime Text 3. For the files that are not overridden, they will continue to function as default.
+
+1. Remove unnecessary built-in snippets
+2. Update Python build systems
 
 ## Install
 
@@ -9,7 +12,7 @@ The real purpose is to override and thus remove unnecessary built-in snippets.
 ```sh
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
 [ -d "Python" ] && mv Python Python.old && echo "Move directory Python ===> Python.old"
-git clone https://github.com/aafulei/sublime-python-snippets.git Python
+git clone https://github.com/aafulei/sublime-python-package.git Python
 ```
 
 ### Windows
@@ -17,5 +20,5 @@ git clone https://github.com/aafulei/sublime-python-snippets.git Python
 ```bat
 cd %APPDATA%\Sublime Text 3\Packages
 if exist Python (move /Y Python Python.old) && (echo "Move directory Python ===> Python.old")
-git clone https://github.com/aafulei/sublime-python-snippets.git Python
+git clone https://github.com/aafulei/sublime-python-package.git Python
 ```
